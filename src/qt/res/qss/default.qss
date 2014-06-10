@@ -1,0 +1,230 @@
+* { 
+    gridline-color: #a3a3a3;
+    outline: 0px;
+}
+
+#atheiststatus {
+    color:#ffffff;
+    background-color:#606262;
+}
+
+QDialog,
+QMainWindow #believe {
+    color: #ffffff;
+    background-image: url(:/images/mainbg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #606262;
+    border: none;
+}
+
+#verticalLayout_2 QFrame {
+    color:#757575; 
+}
+
+#labelTransactionsStatus,
+#labelWalletStatus {
+    color: #79B3E4;
+}
+
+#messagesWidget {
+    background-color:transparent;
+    color:#FFF;
+    border-radius:5px;
+}
+
+#listTransactions,
+#scrollAreaWidgetContents,
+#SendCoinsDialog {
+    color:#FFF;
+}
+
+#labelAlerts { 
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop:0 #F0D0A0, stop:1 #F8D488); 
+    color:#000000; 
+}
+
+#OverviewPage #frame{
+    border:1px solid #747474;
+    border-radius: 8px;
+}
+
+#TransactionDescDialog #detailText,
+#OverviewPage #listTransactions{
+    color:#FFF;
+    background-color:transparent;
+}
+#SendCoinsEntry QValidatedLineEdit{
+    color:#000;
+}
+#SendCoinsDialog #scrollAreaWidgetContents,
+#SendCoinsEntry QToolButton,
+#SendCoinsEntry QToolButton::hover{
+    background-color:transparent;
+}
+
+
+QDialog QLineEdit{
+    background-color: #FFF;
+    color: #000;
+}
+
+QDialog{
+    background-color: #606262;
+}
+
+#SendCoinsDialog,
+#TransactionView{
+    background-color: transparent;
+}
+
+#RPCConsole tab_info{
+    background-color: #606262;
+    color: #000;
+}
+#RPCConsole QLineEdit{
+    background-color: #FFF;
+    color: #000;
+}
+#SignVerifyMessageDialog QPlainTextEdit{
+    background-color: #FFF;
+    color: #000;
+    border-radius: 4px;
+}
+
+appMenuBar {
+    color:#FFF;
+    background-color:#275079; 
+    border:0px; 
+}
+
+QHeaderView {
+    background-color: #336699;
+	border: none;
+}
+
+QHeaderView::section {
+	color: #ffffff;
+	padding: 5px;
+	border:none;
+    background-color: #336699;
+	border:none;
+}
+
+QLabel {
+    color: #ffffff;
+}
+
+QMenuBar {
+    color:#FFF;
+    background-color:#275079; 
+    border:0px; 
+}
+
+QMenuBar::item {
+    color:#FFF;
+    background-color:#275079; 
+    margin-left:10px;
+    margin-top:2px;
+    margin-right:2px;
+    margin-bottom:2px;
+    border:0px;
+}
+
+QProgressBar {
+    color: #ffffff;
+    border-top-style: inset;
+    border:1px solid #a3a3a3;
+    text-align: center;
+    border-radius:4px;
+    padding:1px;
+    background-color: #336699;
+}
+
+QProgressBar::chunk {
+    color: #336699;
+    background-color: #FFF;
+    font-weight: normal;    
+    width: 5px;
+    margin: 0.5px;
+    border-radius:5px;
+}
+
+QScrollArea{
+    background-color:transparent;
+}
+
+QStatusBar::item {
+    border:none;
+}
+
+QTableView {
+    color: #000;
+    background-color:rgba(225,225,225,25);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QTextEdit {
+    color: #ffffff;
+    border:none;
+    border-radius:2px;
+}
+
+QToolBar {
+    margin:0px;
+    padding:5px;
+    spacing:20px;
+    border: none; 
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #275079, stop: 0.4 #336699, stop: 0.5 #336699, stop: 1.0 #336699); 
+}
+QToolBar QToolButton{
+    min-height: 60px;
+    width:100%;
+    color: #4b7db0;
+}
+
+QPushButton,
+QPushButton::focus{	
+    color: #ffffff;
+    border:none;
+}
+
+QToolButton {
+    background-color: transparent;
+    border:none;
+    color: #FFF;
+
+}
+
+QToolButton::hover {
+    border:none;
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #3c74ac, stop: 0.5 #3c74ac, stop: 1.0 transparent); 
+}
+
+QToolButton::checked {
+    border:none;
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #2d5a88, stop: 0.5 #2d5a88, stop: 1.0 transparent);
+}
+
+QToolTip {
+    color: #ffffff;
+    background-color: #9b9b9b;
+    border: 1px solid #a3a3a3;
+}
+
+QWindowsStyle QProgressBar,
+QWindowsXPStyle QProgressBar {
+    background-color: #e8e8e8; 
+    border: 1px solid #a3a3a3; 
+    border-radius: 5px; 
+    padding: 1px; 
+    text-align: center;
+}
+QWindowsStyle QProgressBar::chunk,
+QWindowsXPStyle QProgressBar::chunk {
+    color:#FFF;
+    background-color:gray;
+    border-radius:5px;
+    margin: 0px;
+}
