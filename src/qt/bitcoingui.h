@@ -18,6 +18,7 @@ class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
+class ChatWindow;
 
 class CWallet;
 
@@ -66,6 +67,10 @@ public:
     QAction * getOverviewAction() {
         return overviewAction;
     }
+    
+    QAction * getChatAction() {
+        return chatAction;
+    }
 
     QAction * getHistoryAction() {
         return historyAction;
@@ -102,6 +107,7 @@ private:
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
+    QAction *chatAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
@@ -109,6 +115,7 @@ private:
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *aboutAction;
+    QAction *chatPageAction;
     QAction *receiveCoinsAction;
     QAction *optionsAction;
     QAction *toggleHideAction;
@@ -122,6 +129,7 @@ private:
     Notificator *notificator;
     TransactionView *transactionView;
     RPCConsole *rpcConsole;
+    ChatWindow *chatWindow;
 
     QMovie *syncIconMovie;
     /** Keep track of previous number of blocks, to detect progress */
@@ -186,7 +194,8 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage(QString addr = "");
-
+    /** Switch to chat page */
+    void gotoChatPage();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */

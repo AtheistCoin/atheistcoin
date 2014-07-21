@@ -1,16 +1,64 @@
 * { 
     gridline-color: #a3a3a3;
     outline: 0px;
+    font-family: "Ubuntu",sans-serif;
 }
 
 #atheiststatus {
-    color:#ffffff;
+    color:#fff;
     background-color:#606262;
+}
+
+#splitter QListView {
+    border:none;
+    background-color:rgba(0, 0, 0, 99);
+    border-radius:5px;
+    color:#fff;
+    padding:5px;
+}
+
+#splitter QLineEdit {
+    border:none;
+    background-color:rgba(0, 0, 0, 99);
+    border-radius:5px;
+    color:#fff;
+    height:23px;
+    font-size:12px;
+}
+
+#ChatWindowClass QTabWidget::pane {
+    border:none;
+    background-color:rgba(0, 0, 0, 99);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#ChatWindowClass QTabBar::tab {
+    border:none;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    background-color:rgba(50, 50, 50, 99);
+    color:#fff;
+    margin-right:2px;
+    padding:3px 6px;
+}
+
+#ChatWindowClass QTabBar::tab:selected {
+    background-color:rgba(0, 0, 0, 99);
+}
+
+#ChatWindowClass QTabWidget QTextEdit {
+    background-color:transparent;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight:normal;
+    color:#fff;
+    font-size:12px;
 }
 
 QDialog,
 QMainWindow #believe {
-    color: #ffffff;
+    color: #fff;
     background-image: url(:/images/mainbg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -29,14 +77,14 @@ QMainWindow #believe {
 
 #messagesWidget {
     background-color:transparent;
-    color:#FFF;
+    color:#fff;
     border-radius:5px;
 }
 
 #listTransactions,
 #scrollAreaWidgetContents,
 #SendCoinsDialog {
-    color:#FFF;
+    color:#fff;
 }
 
 #labelAlerts { 
@@ -51,7 +99,7 @@ QMainWindow #believe {
 
 #TransactionDescDialog #detailText,
 #OverviewPage #listTransactions{
-    color:#FFF;
+    color:#fff;
     background-color:transparent;
 }
 #SendCoinsEntry QValidatedLineEdit{
@@ -63,9 +111,8 @@ QMainWindow #believe {
     background-color:transparent;
 }
 
-
 QDialog QLineEdit{
-    background-color: #FFF;
+    background-color: #fff;
     color: #000;
 }
 
@@ -83,17 +130,17 @@ QDialog{
     color: #000;
 }
 #RPCConsole QLineEdit{
-    background-color: #FFF;
+    background-color: #fff;
     color: #000;
 }
 #SignVerifyMessageDialog QPlainTextEdit{
-    background-color: #FFF;
+    background-color: #fff;
     color: #000;
     border-radius: 4px;
 }
 
 appMenuBar {
-    color:#FFF;
+    color:#fff;
     background-color:#275079; 
     border:0px; 
 }
@@ -104,25 +151,25 @@ QHeaderView {
 }
 
 QHeaderView::section {
-	color: #ffffff;
-	padding: 5px;
-	border:none;
+    color: #fff;
+    padding: 5px;
+    border:none;
     background-color: #336699;
-	border:none;
+    border:none;
 }
 
 QLabel {
-    color: #ffffff;
+    color: #fff;
 }
 
 QMenuBar {
-    color:#FFF;
+    color:#fff;
     background-color:#275079; 
     border:0px; 
 }
 
 QMenuBar::item {
-    color:#FFF;
+    color:#fff;
     background-color:#275079; 
     margin-left:10px;
     margin-top:2px;
@@ -132,7 +179,7 @@ QMenuBar::item {
 }
 
 QProgressBar {
-    color: #ffffff;
+    color: #fff;
     border-top-style: inset;
     border:1px solid #a3a3a3;
     text-align: center;
@@ -143,11 +190,9 @@ QProgressBar {
 
 QProgressBar::chunk {
     color: #336699;
-    background-color: #FFF;
+    background-color: rgba(255,255,255,50);
     font-weight: normal;    
     width: 5px;
-    margin: 0.5px;
-    border-radius:5px;
 }
 
 QScrollArea{
@@ -160,40 +205,40 @@ QStatusBar::item {
 
 QTableView {
     color: #000;
-    background-color:rgba(225,225,225,25);
+    background-color:transparent;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
 
 QTextEdit {
-    color: #ffffff;
+    color: #fff;
     border:none;
     border-radius:2px;
 }
 
 QToolBar {
     margin:0px;
-    padding:5px;
-    spacing:20px;
+    padding:0px;
+    spacing:15px;
     border: none; 
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #275079, stop: 0.4 #336699, stop: 0.5 #336699, stop: 1.0 #336699); 
 }
 QToolBar QToolButton{
     min-height: 60px;
     width:100%;
-    color: #4b7db0;
+    color: #fff;
 }
 
 QPushButton,
 QPushButton::focus{	
-    color: #ffffff;
+    color: #fff;
     border:none;
 }
 
 QToolButton {
     background-color: transparent;
     border:none;
-    color: #FFF;
+    color: #fff;
 
 }
 
@@ -208,7 +253,7 @@ QToolButton::checked {
 }
 
 QToolTip {
-    color: #ffffff;
+    color: #fff;
     background-color: #9b9b9b;
     border: 1px solid #a3a3a3;
 }
@@ -223,7 +268,7 @@ QWindowsXPStyle QProgressBar {
 }
 QWindowsStyle QProgressBar::chunk,
 QWindowsXPStyle QProgressBar::chunk {
-    color:#FFF;
+    color:#fff;
     background-color:gray;
     border-radius:5px;
     margin: 0px;

@@ -1,3 +1,16 @@
+.DS_Store
 /nbproject/
 /.project
-.DS_Store
+/qrc_bitcoin.cpp
+/Makefile
+/AtheistCoin-qt
+/src/AtheistCoind
+/src/leveldb/build_config.mk
+/irc.log
+/build/
+/src/qt/locale/bitcoin_zh_CN.qm
+/src/qt/locale/bitcoin_fr.qm
+/src/qt/locale/bitcoin_ru.qm
+/src/qt/locale/bitcoin_en.qm
+/src/qt/locale/bitcoin_de.qm
+/results.txt

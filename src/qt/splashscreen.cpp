@@ -7,11 +7,6 @@
 
 SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
 QSplashScreen(pixmap, f) {
-    // set reference point, paddings
-    int paddingRight = 130;
-    int paddingTop = 5;
-    int titleVersionVSpace = 15;
-    //int titleCopyrightVSpace    = 40;
 
     float fontFactor = 1.0;
 

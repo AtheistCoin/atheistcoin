@@ -1076,62 +1076,85 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock) {
 
 
 static const int64 nGenesisBlockRewardCoin = 1.0 * COIN;
-int64 minimumSubsidy = 0.1 * COIN;
+int64 minimumSubsidy = 1 * COIN;
 
 int64 static GetBlockSubsidy(int nHeight) {
 
     if (nHeight == 0) {
         return nGenesisBlockRewardCoin;
     }
-
+    
     int64 nSubsidy = 10 * COIN;
 
-    // Subsidy is reduced every 58400 blocks, which will occur once a month
-    int exponent = (nHeight / 58400);
-    
-    for (int i = 0; i < exponent; i++) {
-        if (i <= 5) {
-            nSubsidy = nSubsidy - 1;
+    if (nHeight > 80000) {
+        
+        if (nHeight <= 150000) {
+            nSubsidy = 7.5 * COIN;
         }
-        if (i > 5 && i <= 11) {
-            nSubsidy = nSubsidy - .5;
+        
+        if (nHeight <= 250000) {
+            nSubsidy = 5 * COIN;
         }
-        if (i > 11 && i <= 18) {
-            nSubsidy = nSubsidy - .2;
+        
+        if (nHeight <= 500000) {
+            nSubsidy = 2.5 * COIN;
         }
-        if (i > 18) {
-            nSubsidy = nSubsidy - .1;
+        
+        if (nHeight <= 1000000) {
+            nSubsidy = 1 * COIN;
         }
-    }
+        
+    } else {
     
-    if (nSubsidy < minimumSubsidy) {
-        nSubsidy = minimumSubsidy;
+        int64 nSubsidy = 10 * COIN;
+
+        // Subsidy is reduced every 58400 blocks, which will occur roughly once a month
+        int exponent = (nHeight / 58400);
+
+        for (int i = 0; i < exponent; i++) {
+            if (i <= 5) {
+                nSubsidy = nSubsidy - 1;
+            }
+            if (i > 5 && i <= 11) {
+                nSubsidy = nSubsidy - .5;
+            }
+            if (i > 11 && i <= 18) {
+                nSubsidy = nSubsidy - .2;
+            }
+            if (i > 18) {
+                nSubsidy = nSubsidy - .1;
+            }
+        }
+
+        if (nSubsidy < minimumSubsidy) {
+            nSubsidy = minimumSubsidy;
+        }
+
+        // Daily superblock(100 ATH) every 1920 blocks 
+        int day = (nHeight % 1920);
+        if (day == 0) {
+            nSubsidy = nSubsidy + 100;
+        }
+
+       // Weekly superblock(500 ATH) every 13440 blocks 
+        int week = (nHeight % 13440);
+        if (week == 0) {
+            nSubsidy = nSubsidy + 500;
+        }
+
+        // Monthly superblock(1000 ATH) every 58400 blocks 
+        int month = (nHeight % 58400);
+        if (month == 0) {
+            nSubsidy = nSubsidy + 1000;
+        }
+
+        // Halfyearly superblock(1510 ATH) every 350400 blocks 
+        int halfyear = (nHeight % 350400);
+        if (halfyear == 0) {
+            nSubsidy = nSubsidy + 1510;
+        }
+
     }
-    
-    // Daily superblock(100 ATH) every 1920 blocks 
-    int day = (nHeight % 1920);
-    if (day == 0) {
-        nSubsidy = nSubsidy + 100;
-    }
-    
-   // Weekly superblock(500 ATH) every 13440 blocks 
-    int week = (nHeight % 13440);
-    if (week == 0) {
-        nSubsidy = nSubsidy + 500;
-    }
-    
-    // Montly superblock(1000 ATH) every 116800 blocks 
-    int month = (nHeight % 116800);
-    if (month == 0) {
-        nSubsidy = nSubsidy + 1000;
-    }
-    
-    // Halfyearly superblock(1510 ATH) every 350400 blocks 
-    int halfyear = (nHeight % 350400);
-    if (halfyear == 0) {
-        nSubsidy = nSubsidy + 1510;
-    }
-    
     return nSubsidy;
 }
 
@@ -1170,8 +1193,8 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     /* current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io */
     const CBlockIndex *BlockLastSolved = pindexLast;
     const CBlockIndex *BlockReading = pindexLast;
-    const CBlockHeader *BlockCreating = pblock;
-    BlockCreating = BlockCreating;
+    // const CBlockHeader *BlockCreating = pblock;  /* Constant appears to not be used*/
+
     int64 nActualTimespan = 0;
     int64 LastBlockTime = 0;
     int64 PastBlocksMin = 24;

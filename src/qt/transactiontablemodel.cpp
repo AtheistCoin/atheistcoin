@@ -424,7 +424,7 @@ QVariant TransactionTableModel::txStatusDecoration(const TransactionRecord *wtx)
                 return QIcon(":/icons/transaction_confirmed");
         }
     }
-    return QColor(0, 0, 0);
+    return QColor(255, 255, 255);
 }
 
 QString TransactionTableModel::formatTooltip(const TransactionRecord *rec) const {
@@ -441,6 +441,8 @@ QVariant TransactionTableModel::data(const QModelIndex &index, int role) const {
         return QVariant();
     TransactionRecord *rec = static_cast<TransactionRecord*> (index.internalPointer());
 
+    QFont font;
+    
     switch (role) {
         case Qt::DecorationRole:
             switch (index.column()) {
@@ -477,6 +479,11 @@ QVariant TransactionTableModel::data(const QModelIndex &index, int role) const {
                     return rec->credit + rec->debit;
             }
             break;
+        case Qt::FontRole:
+            if (index.column() == 3) {
+                font = GUIUtil::bitcoinAddressFont();
+            }
+            return font;
         case Qt::ToolTipRole:
             return formatTooltip(rec);
         case Qt::TextAlignmentRole:
@@ -489,10 +496,7 @@ QVariant TransactionTableModel::data(const QModelIndex &index, int role) const {
             if (index.column() == Amount && (rec->credit + rec->debit) < 0) {
                 return COLOR_NEGATIVE;
             }
-            if (index.column() == ToAddress) {
-                return addressColor(rec);
-            }
-            return addressColor(rec);
+            return QColor(255,255,255);
             break;
         case Qt::BackgroundRole:
             return QColor(0,0,0,0);

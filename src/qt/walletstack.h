@@ -19,10 +19,12 @@ class WalletView;
 class TransactionView;
 class OverviewPage;
 class AddressBookPage;
+class AddressBookPage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
+class ChatWindow;
 
 class CWalletManager;
 
@@ -74,6 +76,8 @@ public slots:
 
     /** Switch to overview (home) page */
     void gotoOverviewPage();
+      /** Switch to chat page */
+    void gotoChatPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */

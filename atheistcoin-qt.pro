@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = AtheistCoin-qt
-VERSION = 1.0.0.0
+VERSION = 1.0.0.1
 INCLUDEPATH += src src/json src/qt
 
 
@@ -229,6 +229,8 @@ HEADERS += src/qt/bitcoingui.h \
     src/limitedmap.h \
     src/qt/macnotificationhandler.h \
     src/qt/splashscreen.h \
+    src/qt/chatwindow.h \
+    src/qt/ircserver.h \
     src/hash/sph_groestl.h \
     src/hash/sph_types.h
 
@@ -299,6 +301,8 @@ SOURCES += src/qt/bitcoin.cpp \
     src/leveldb.cpp \
     src/txdb.cpp \
     src/qt/splashscreen.cpp \
+    src/qt/ircserver.cpp \
+    src/qt/chatwindow.cpp \
     src/hash/groestl.c 
 
 RESOURCES += src/qt/bitcoin.qrc
@@ -313,6 +317,7 @@ FORMS += src/qt/forms/sendcoinsdialog.ui \
     src/qt/forms/sendcoinsentry.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
+    src/qt/forms/chatwindow.ui \  
     src/qt/forms/optionsdialog.ui
 
 contains(USE_QRCODE, 1) {

@@ -185,7 +185,7 @@ QVariant AddressTableModel::data(const QModelIndex &index, int role) const {
     } else if (role == Qt::ForegroundRole) {
         return QColor("white");
     } else if (role == Qt::BackgroundRole) {
-        return QColor(0,0,0,0);
+        return QColor("transparent");
     }
     return QVariant();
 }

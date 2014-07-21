@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About GroestlCoin</source>
-        <translation>&amp;О GroestlCoin</translation>
+        <source>About AtheistCoin</source>
+        <translation>&amp;О AtheistCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;GroestlCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;GroestlCoin&lt;/b&gt; версия</translation>
+        <source>&lt;b&gt;AtheistCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;AtheistCoin&lt;/b&gt; версия</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The GroestlCoin Developers</source>
-        <translation>Разработчики GroestlCoin</translation>
+        <source>The AtheistCoin Developers</source>
+        <translation>Разработчики AtheistCoin</translation>
     </message>
 </context>
 <context>
@@ -82,8 +82,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a GroestlCoin address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом GroestlCoin</translation>
+        <source>Sign a message to prove you own a AtheistCoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом AtheistCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified GroestlCoin address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом GroestlCoin</translation>
+        <source>Verify a message to ensure it was signed with a specified AtheistCoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом AtheistCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,7 +122,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your GroestlCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your AtheistCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ваши адреса для получения средств. Совет: проверьте сумму и адрес назначения перед переводом.</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>GroestlCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>AtheistCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -374,8 +374,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about GroestlCoin</source>
-        <translation>Показать информацию о GroestlCoin&apos;е</translation>
+        <source>Show information about AtheistCoin</source>
+        <translation>Показать информацию о AtheistCoin&apos;е</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -455,8 +455,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>GroestlCoin</source>
-        <translation>GroestlCoin</translation>
+        <source>AtheistCoin</source>
+        <translation>AtheistCoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About GroestlCoin</source>
-        <translation>&amp;О GroestlCoin</translation>
+        <source>&amp;About AtheistCoin</source>
+        <translation>&amp;О AtheistCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your GroestlCoin addresses to prove you own them</source>
-        <translation>Подписать сообщения вашим адресом GroestlCoin, чтобы доказать, что вы им владеете</translation>
+        <source>Sign messages with your AtheistCoin addresses to prove you own them</source>
+        <translation>Подписать сообщения вашим адресом AtheistCoin, чтобы доказать, что вы им владеете</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified GroestlCoin addresses</source>
-        <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом GroestlCoin</translation>
+        <source>Verify messages to ensure they were signed with specified AtheistCoin addresses</source>
+        <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом AtheistCoin</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,12 +536,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>GroestlCoin client</source>
-        <translation>GroestlCoin клиент</translation>
+        <source>AtheistCoin client</source>
+        <translation>AtheistCoin клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to GroestlCoin network</source>
+        <source>%n active connection(s) to AtheistCoin network</source>
         <translation><numerusform>%n активное соединение с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform></translation>
     </message>
     <message>
@@ -656,8 +656,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid GroestlCoin address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом GroestlCoin или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid AtheistCoin address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом AtheistCoin или неправильными параметрами URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. GroestlCoin can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. GroestlCoin не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. AtheistCoin can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. AtheistCoin не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid GroestlCoin address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным GroestlCoin-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid AtheistCoin address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным AtheistCoin-адресом.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>GroestlCoin-Qt</source>
-        <translation>GroestlCoin-Qt</translation>
+        <source>AtheistCoin-Qt</source>
+        <translation>AtheistCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start GroestlCoin after logging in to the system.</source>
-        <translation>Автоматически запускать GroestlCoin после входа в систему</translation>
+        <source>Automatically start AtheistCoin after logging in to the system.</source>
+        <translation>Автоматически запускать AtheistCoin после входа в систему</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start GroestlCoin on system login</source>
-        <translation>&amp;Запускать GroestlCoin при входе в систему</translation>
+        <source>&amp;Start AtheistCoin on system login</source>
+        <translation>&amp;Запускать AtheistCoin при входе в систему</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the GroestlCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для GroestlCoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the AtheistCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для AtheistCoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,8 +854,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the GroestlCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Подключаться к сети GroestlCoin через прокси SOCKS (например, при подключении через Tor).</translation>
+        <source>Connect to the AtheistCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети AtheistCoin через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting GroestlCoin.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска GroestlCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting AtheistCoin.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска AtheistCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,8 +944,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show GroestlCoin addresses in the transaction list or not.</source>
-        <translation>Показывать ли адреса GroestlCoin в списке транзакций.</translation>
+        <source>Whether to show AtheistCoin addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса AtheistCoin в списке транзакций.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting GroestlCoin.</source>
-        <translation>Эта настройка вступит в силу после перезапуска GroestlCoin</translation>
+        <source>This setting will take effect after restarting AtheistCoin.</source>
+        <translation>Эта настройка вступит в силу после перезапуска AtheistCoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GroestlCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью GroestlCoin после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AtheistCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью AtheistCoin после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,8 +1069,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start GroestlCoin: click-to-pay handler</source>
-        <translation>Не удаётся запустить GroestlCoin: обработчик click-to-pay</translation>
+        <source>Cannot start AtheistCoin: click-to-pay handler</source>
+        <translation>Не удаётся запустить AtheistCoin: обработчик click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1219,8 +1219,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the GroestlCoin-Qt help message to get a list with possible GroestlCoin command-line options.</source>
-        <translation>Показать помощь по GroestlCoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the AtheistCoin-Qt help message to get a list with possible AtheistCoin command-line options.</source>
+        <translation>Показать помощь по AtheistCoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>GroestlCoin - Debug window</source>
-        <translation>GroestlCoin - Окно отладки</translation>
+        <source>AtheistCoin - Debug window</source>
+        <translation>AtheistCoin - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>GroestlCoin Core</source>
-        <translation>Ядро GroestlCoin</translation>
+        <source>AtheistCoin Core</source>
+        <translation>Ядро AtheistCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,8 +1254,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the GroestlCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл GroestlCoin из текущего каталога данных. Это может занять время для больших лог-файлов.</translation>
+        <source>Open the AtheistCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл AtheistCoin из текущего каталога данных. Это может занять время для больших лог-файлов.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1264,8 +1264,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the GroestlCoin RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль GroestlCoin.</translation>
+        <source>Welcome to the AtheistCoin RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль AtheistCoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1448,8 +1448,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a GroestlCoin address (e.g. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введите GroestlCoin-адрес (например 7LA5FtQhnnWnkK6zjFfutR7Stiit4wKd63)</translation>
+        <source>Enter a AtheistCoin address (e.g. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Введите AtheistCoin-адрес (например 7LA5FtQhnnWnkK6zjFfutR7Stiit4wKd63)</translation>
     </message>
 </context>
 <context>
@@ -1513,8 +1513,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this GroestlCoin address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом GroestlCoin</translation>
+        <source>Sign the message to prove you own this AtheistCoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом AtheistCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,8 +1549,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified GroestlCoin address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом GroestlCoin</translation>
+        <source>Verify the message to ensure it was signed with the specified AtheistCoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом AtheistCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a GroestlCoin address (e.g. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введите адрес GroestlCoin (напр. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a AtheistCoin address (e.g. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Введите адрес AtheistCoin (напр. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter GroestlCoin signature</source>
-        <translation>Введите подпись GroestlCoin</translation>
+        <source>Enter AtheistCoin signature</source>
+        <translation>Введите подпись AtheistCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The GroestlCoin Developers</source>
-        <translation>Разработчики GroestlCoin</translation>
+        <source>The AtheistCoin Developers</source>
+        <translation>Разработчики AtheistCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2184,10 +2184,10 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>GroestlCoin-core</name>
+    <name>AtheistCoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>GroestlCoin version</source>
+        <source>AtheistCoin version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -2197,8 +2197,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or GroestlCoind</source>
-        <translation>Отправить команду на -server или GroestlCoind</translation>
+        <source>Send command to -server or AtheistCoind</source>
+        <translation>Отправить команду на -server или AtheistCoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2218,13 +2218,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: GroestlCoin.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: GroestlCoin.conf)</translation>
+        <source>Specify configuration file (default: AtheistCoin.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: AtheistCoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: GroestlCoind.pid)</source>
-        <translation>Задать pid-файл (по умолчанию: GroestlCoin.pid)</translation>
+        <source>Specify pid file (default: AtheistCoind.pid)</source>
+        <translation>Задать pid-файл (по умолчанию: AtheistCoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2301,24 +2301,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=GroestlCoinrpc
+rpcuser=AtheistCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GroestlCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;AtheistCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, вы должны установить опцию rpcpassword в конфигурационном файле:
  %s
 Рекомендуется использовать следующий случайный пароль:
-rpcuser=GroestlCoinrpc
+rpcuser=AtheistCoinrpc
 rpcpassword=%s
 (вам не нужно запоминать этот пароль)
 Имя и пароль ДОЛЖНЫ различаться.
 Если файл не существует, создайте его и установите права доступа только для владельца, только для чтения.
 Также рекомендуется включить alertnotify для оповещения о проблемах;
-Например: alertnotify=echo %%s | mail -s &quot;GroestlCoin Alert&quot; admin@foo.com
+Например: alertnotify=echo %%s | mail -s &quot;AtheistCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2333,8 +2333,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. GroestlCoin is probably already running.</source>
-        <translation>Не удаётся установить блокировку на каталог данных %s.  Возможно, GroestlCoin уже работает.</translation>
+        <source>Cannot obtain a lock on data directory %s. AtheistCoin is probably already running.</source>
+        <translation>Не удаётся установить блокировку на каталог данных %s.  Возможно, AtheistCoin уже работает.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2378,8 +2378,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GroestlCoin will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, GroestlCoin будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong AtheistCoin will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, AtheistCoin будет работать некорректно.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2628,9 +2628,9 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the GroestlCoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the AtheistCoin Wiki for SSL setup instructions)</source>
         <translation>
-Параметры SSL: (см. GroestlCoin Wiki для инструкций по настройке SSL)</translation>
+Параметры SSL: (см. AtheistCoin Wiki для инструкций по настройке SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2819,13 +2819,13 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of GroestlCoin</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию GroestlCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of AtheistCoin</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию AtheistCoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart GroestlCoin to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите GroestlCoin для завершения операции.</translation>
+        <source>Wallet needed to be rewritten: restart AtheistCoin to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите AtheistCoin для завершения операции.</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2884,8 +2884,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. GroestlCoin is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, GroestlCoin уже работает.</translation>
+        <source>Unable to bind to %s on this computer. AtheistCoin is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, AtheistCoin уже работает.</translation>
     </message>
     <message>
         <location line="+64"/>

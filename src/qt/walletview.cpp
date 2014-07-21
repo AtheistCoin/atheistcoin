@@ -8,6 +8,7 @@
 #include "bitcoingui.h"
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
+#include "chatwindow.h"
 #include "sendcoinsdialog.h"
 #include "signverifymessagedialog.h"
 #include "clientmodel.h"
@@ -57,6 +58,7 @@ walletModel(0) {
     receiveCoinsPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab);
 
     sendCoinsPage = new SendCoinsDialog(gui);
+    chatWindow = new ChatWindow(gui);
 
     signVerifyMessageDialog = new SignVerifyMessageDialog(gui);
 
@@ -65,6 +67,7 @@ walletModel(0) {
     addWidget(addressBookPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
+    addWidget(chatWindow);
 
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
@@ -96,6 +99,7 @@ void WalletView::setClientModel(ClientModel *clientModel) {
     this->clientModel = clientModel;
     if (clientModel) {
         overviewPage->setClientModel(clientModel);
+        chatWindow->setModel(clientModel);
         addressBookPage->setOptionsModel(clientModel->getOptionsModel());
         receiveCoinsPage->setOptionsModel(clientModel->getOptionsModel());
     }
@@ -145,6 +149,11 @@ void WalletView::incomingTransaction(const QModelIndex& parent, int start, int /
 void WalletView::gotoOverviewPage() {
     gui->getOverviewAction()->setChecked(true);
     setCurrentWidget(overviewPage);
+}
+
+void WalletView::gotoChatPage() {
+    //gui->getChatAction()->setChecked(true);
+    setCurrentWidget(chatWindow);
 }
 
 void WalletView::gotoHistoryPage() {

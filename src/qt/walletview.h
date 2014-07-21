@@ -14,6 +14,7 @@ class ClientModel;
 class WalletModel;
 class TransactionView;
 class OverviewPage;
+class ChatWindow;
 class AddressBookPage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
@@ -57,7 +58,7 @@ private:
     BitcoinGUI *gui;
     ClientModel *clientModel;
     WalletModel *walletModel;
-
+    ChatWindow *chatWindow;
     OverviewPage *overviewPage;
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
@@ -70,6 +71,8 @@ private:
 public slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
+      /** Switch to chat page */
+    void gotoChatPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */

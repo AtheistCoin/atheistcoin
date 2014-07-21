@@ -64,6 +64,10 @@ void WalletFrame::gotoOverviewPage() {
     walletStack->gotoOverviewPage();
 }
 
+void WalletFrame::gotoChatPage() {
+    walletStack->gotoChatPage();
+}
+
 void WalletFrame::gotoHistoryPage() {
     walletStack->gotoHistoryPage();
 }

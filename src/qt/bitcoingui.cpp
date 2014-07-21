@@ -24,6 +24,7 @@
 #include "ui_interface.h"
 #include "wallet.h"
 #include "init.h"
+#include "chatwindow.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -67,6 +68,7 @@ trayIcon(0),
 notificator(0),
 rpcConsole(0),
 prevBlocks(0) {
+    setMinimumSize(800,600);
     restoreWindowGeometry();
     setWindowTitle(tr("AtheistCoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
@@ -120,7 +122,10 @@ prevBlocks(0) {
     frameBlocksLayout->addWidget(labelBlocksIcon);
     frameBlocksLayout->addStretch();
 
-
+    // Add custom fonts
+    QFontDatabase::addApplicationFont(":/fonts/ubuntu_mono");
+    QFontDatabase::addApplicationFont(":/fonts/ubuntu_regular");
+    
     // Progress bar and label for blocks download
     progressBarLabel = new QLabel();
     progressBarLabel->setVisible(false);
@@ -194,6 +199,13 @@ void BitcoinGUI::createActions() {
     addressBookAction->setCheckable(true);
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(addressBookAction);
+    
+    chatPageAction = new QAction(QIcon(":/icons/chat-page"), tr("&Chat"), this);
+    chatPageAction->setStatusTip(tr("Chat with other AtheistCoin users"));
+    chatPageAction->setToolTip(chatPageAction->statusTip());
+    chatPageAction->setCheckable(true);
+    chatPageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
+    tabGroup->addAction(chatPageAction);
 
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
@@ -205,6 +217,8 @@ void BitcoinGUI::createActions() {
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
+    connect(chatPageAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(chatPageAction, SIGNAL(triggered()), this, SLOT(gotoChatPage()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("E&xit"), this);
     quitAction->setStatusTip(tr("Quit application"));
@@ -296,6 +310,7 @@ void BitcoinGUI::createToolBars() {
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+    toolbar->addAction(chatPageAction);
     toolbar->addWidget(spacerWidget1);
 
 }
@@ -439,6 +454,10 @@ void BitcoinGUI::aboutClicked() {
     AboutDialog dlg;
     dlg.setModel(clientModel);
     dlg.exec();
+}
+
+void BitcoinGUI::gotoChatPage() {
+    if (walletFrame) walletFrame->gotoChatPage();
 }
 
 void BitcoinGUI::gotoOverviewPage() {

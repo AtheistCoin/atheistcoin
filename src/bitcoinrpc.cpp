@@ -246,6 +246,7 @@ static const CRPCCommand vRPCCommands[] = {//  name                      actor (
     { "gettxout", &gettxout, true, false},
     { "lockunspent", &lockunspent, false, false},
     { "listlockunspent", &listlockunspent, false, false},
+    { "makekeypair", &makekeypair, false, true},
 };
 
 CRPCTable::CRPCTable() {

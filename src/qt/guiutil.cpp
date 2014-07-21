@@ -57,7 +57,7 @@ namespace GUIUtil {
     }
 
     QFont bitcoinAddressFont() {
-        QFont font("Helvetica");
+        QFont font("Ubuntu Mono", 10);
         font.setStyleHint(QFont::SansSerif);
         return font;
     }
