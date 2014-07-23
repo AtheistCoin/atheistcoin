@@ -1086,7 +1086,7 @@ int64 static GetBlockSubsidy(int nHeight) {
     
     int64 nSubsidy = 10 * COIN;
 
-    if (nHeight > 80000) {
+    if (nHeight >= 85000) {
         
         if (nHeight <= 150000) {
             nSubsidy = 7.5 * COIN;
@@ -1105,8 +1105,6 @@ int64 static GetBlockSubsidy(int nHeight) {
         }
         
     } else {
-    
-        int64 nSubsidy = 10 * COIN;
 
         // Subsidy is reduced every 58400 blocks, which will occur roughly once a month
         int exponent = (nHeight / 58400);
