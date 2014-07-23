@@ -19,8 +19,6 @@
         <key>CFBundleIdentifier</key>
         <string>org.atheistcoin.AtheistCoin-Qt</string>
         <key>CFBundleURLTypes</key>
-        <key>NSHighResolutionCapable</key>
-        <true/>
         <array>
             <dict>
                 <key>CFBundleTypeRole</key>
@@ -33,5 +31,7 @@
                 </array>
             </dict>
         </array>
+        <key>NSHighResolutionCapable</key>
+        <true/>
     </dict>
 </plist>
