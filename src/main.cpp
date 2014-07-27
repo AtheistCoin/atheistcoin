@@ -1092,15 +1092,15 @@ int64 static GetBlockSubsidy(int nHeight) {
             nSubsidy = 7.5 * COIN;
         }
         
-        if (nHeight <= 250000) {
+        if (nHeight > 150000 && nHeight <= 250000) {
             nSubsidy = 5 * COIN;
         }
         
-        if (nHeight <= 500000) {
+        if (nHeight > 250000 && nHeight <= 500000) {
             nSubsidy = 2.5 * COIN;
         }
         
-        if (nHeight <= 1000000) {
+        if (nHeight > 500000 && nHeight <= 1000000) {
             nSubsidy = 1 * COIN;
         }
         
